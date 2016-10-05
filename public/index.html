@@ -27,6 +27,10 @@ h1 {
     padding: 10px;
 }
 
+#guesses{
+    text-decoration: underline;
+}
+
 canvas {
     width: 800px;
     height: 600px;
@@ -34,6 +38,11 @@ canvas {
     display: block;
     margin: 0 auto;
 }
+
+/*#clear{
+    
+    margin-left: 45%;
+}*/
 </style>
 
 <!-- JS -->
@@ -44,14 +53,20 @@ canvas {
 
 <div id="main">
     <h1>Pictionary</h1>
+
 <div id="top-message">
-    <div id="guess"></div> 
-    <!--style="display: none"-->
+    <div id="wordChoice"> Your word is: <span id='test'></span> </div>
+    <div id="guess" style="display: none"> 
+
         Make a guess: <input id="usr-guess" type="text">
+        </div>
     </div>
+    
 </div>
+
 <div>
-    <ul id="guess-list"></ul>
+    <ul id="guess-list"><span id="guesses">GUESSES</span></ul>
 </div>
+
 <canvas id="canvas"></canvas>
-</div>
+<!--<button id="clear">Clear Drawing</button>-->
