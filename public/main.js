@@ -44,9 +44,11 @@ var userAction = function(data, word){
             draw(position);                
             socket.emit('draw', position);
             } 
-            wordChoice.text(word);
+            
             
         });
+        
+        wordChoice.text(word);
 
     }else{
         
